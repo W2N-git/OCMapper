@@ -62,6 +62,8 @@
 		15EA38021866102D005CCEA0 /* SpecialUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EA38011866102D005CCEA0 /* SpecialUser.m */; };
 		15EA380518661548005CCEA0 /* CDSpecialUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EA380418661548005CCEA0 /* CDSpecialUser.m */; };
 		15EF0535172783F70041358D /* InCodeMappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EF052F172783F70041358D /* InCodeMappingProvider.m */; };
+		F3FEB0891B171934007F44CF /* PropertyProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FEB0861B171934007F44CF /* PropertyProviders.swift */; };
+		F3FEB08A1B171934007F44CF /* ObjectGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FEB0881B171934007F44CF /* ObjectGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +177,11 @@
 		15EA380418661548005CCEA0 /* CDSpecialUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSpecialUser.m; sourceTree = "<group>"; };
 		15EF052E172783F70041358D /* InCodeMappingProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InCodeMappingProvider.h; sourceTree = "<group>"; };
 		15EF052F172783F70041358D /* InCodeMappingProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InCodeMappingProvider.m; sourceTree = "<group>"; };
+		F3FEB0851B171933007F44CF /* OCMapper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCMapper-Bridging-Header.h"; sourceTree = "<group>"; };
+		F3FEB0861B171934007F44CF /* PropertyProviders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyProviders.swift; sourceTree = "<group>"; };
+		F3FEB0871B171934007F44CF /* ObjectGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectGenerator.h; sourceTree = "<group>"; };
+		F3FEB0881B171934007F44CF /* ObjectGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectGenerator.m; sourceTree = "<group>"; };
+		F3FEB08B1B1719B5007F44CF /* ObjectMapper+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper+Private.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -414,6 +421,11 @@
 				15E2B979171BEAEB00526C77 /* ObjectMapper.h */,
 				15E2B97A171BEAEB00526C77 /* ObjectMapper.m */,
 				15E2B994171BED2400526C77 /* OCMapper.h */,
+				F3FEB0861B171934007F44CF /* PropertyProviders.swift */,
+				F3FEB0871B171934007F44CF /* ObjectGenerator.h */,
+				F3FEB0881B171934007F44CF /* ObjectGenerator.m */,
+				F3FEB0851B171933007F44CF /* OCMapper-Bridging-Header.h */,
+				F3FEB08B1B1719B5007F44CF /* ObjectMapper+Private.h */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -557,6 +569,7 @@
 				15E2B984171BEAEB00526C77 /* Comment.m in Sources */,
 				15E2B985171BEAEB00526C77 /* User.m in Sources */,
 				15E2B989171BEAEB00526C77 /* ObjectMapper.m in Sources */,
+				F3FEB0891B171934007F44CF /* PropertyProviders.swift in Sources */,
 				15E2B98A171BEAEB00526C77 /* ObjectMappingInfo.m in Sources */,
 				157B3076171E3655005AAB02 /* CoreDataManager.m in Sources */,
 				157B307C171E36D4005AAB02 /* CDUser.m in Sources */,
@@ -574,6 +587,7 @@
 				1502B38B17CD985300C095DE /* AFHTTPRequestOperation.m in Sources */,
 				15EA380518661548005CCEA0 /* CDSpecialUser.m in Sources */,
 				1502B38C17CD985300C095DE /* AFImageRequestOperation.m in Sources */,
+				F3FEB08A1B171934007F44CF /* ObjectGenerator.m in Sources */,
 				1502B38D17CD985300C095DE /* AFJSONRequestOperation.m in Sources */,
 				15EA38021866102D005CCEA0 /* SpecialUser.m in Sources */,
 				1502B38E17CD985300C095DE /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -651,7 +665,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -673,7 +687,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -684,11 +698,14 @@
 		15B554DF171B7B3C0058E159 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OCMapper/OCMapper-Prefix.pch";
 				INFOPLIST_FILE = "OCMapper/OCMapper-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = OCMapper;
+				SWIFT_OBJC_BRIDGING_HEADER = "OCMapper/Source/OCMapper-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -696,11 +713,13 @@
 		15B554E0171B7B3C0058E159 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OCMapper/OCMapper-Prefix.pch";
 				INFOPLIST_FILE = "OCMapper/OCMapper-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = OCMapper;
+				SWIFT_OBJC_BRIDGING_HEADER = "OCMapper/Source/OCMapper-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
