@@ -62,8 +62,10 @@
 		15EA38021866102D005CCEA0 /* SpecialUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EA38011866102D005CCEA0 /* SpecialUser.m */; };
 		15EA380518661548005CCEA0 /* CDSpecialUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EA380418661548005CCEA0 /* CDSpecialUser.m */; };
 		15EF0535172783F70041358D /* InCodeMappingProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EF052F172783F70041358D /* InCodeMappingProvider.m */; };
-		F3FEB0891B171934007F44CF /* PropertyProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FEB0861B171934007F44CF /* PropertyProviders.swift */; };
 		F3FEB08A1B171934007F44CF /* ObjectGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FEB0881B171934007F44CF /* ObjectGenerator.m */; };
+		F3FEB0C31B172452007F44CF /* PropertiesProviders.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FEB0C21B172452007F44CF /* PropertiesProviders.m */; };
+		F3FEB0C51B17259A007F44CF /* Flight.json in Resources */ = {isa = PBXBuildFile; fileRef = F3FEB0C41B17259A007F44CF /* Flight.json */; };
+		F3FEB0C71B1725A4007F44CF /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FEB0C61B1725A4007F44CF /* Flight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,11 +179,14 @@
 		15EA380418661548005CCEA0 /* CDSpecialUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDSpecialUser.m; sourceTree = "<group>"; };
 		15EF052E172783F70041358D /* InCodeMappingProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InCodeMappingProvider.h; sourceTree = "<group>"; };
 		15EF052F172783F70041358D /* InCodeMappingProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InCodeMappingProvider.m; sourceTree = "<group>"; };
-		F3FEB0851B171933007F44CF /* OCMapper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCMapper-Bridging-Header.h"; sourceTree = "<group>"; };
-		F3FEB0861B171934007F44CF /* PropertyProviders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyProviders.swift; sourceTree = "<group>"; };
 		F3FEB0871B171934007F44CF /* ObjectGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectGenerator.h; sourceTree = "<group>"; };
 		F3FEB0881B171934007F44CF /* ObjectGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectGenerator.m; sourceTree = "<group>"; };
 		F3FEB08B1B1719B5007F44CF /* ObjectMapper+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper+Private.h"; sourceTree = "<group>"; };
+		F3FEB0C11B172452007F44CF /* PropertiesProviders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertiesProviders.h; sourceTree = "<group>"; };
+		F3FEB0C21B172452007F44CF /* PropertiesProviders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertiesProviders.m; sourceTree = "<group>"; };
+		F3FEB0C41B17259A007F44CF /* Flight.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Flight.json; sourceTree = "<group>"; };
+		F3FEB0C61B1725A4007F44CF /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		F3FEB0C81B1726A8007F44CF /* OCMapper-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCMapper-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,6 +347,8 @@
 		15B554A0171B7B3B0058E159 = {
 			isa = PBXGroup;
 			children = (
+				F3FEB0C41B17259A007F44CF /* Flight.json */,
+				F3FEB0C61B1725A4007F44CF /* Flight.swift */,
 				15E2B962171BEAEB00526C77 /* OCMapper */,
 				15E2B98B171BEAF400526C77 /* OCMapperTests */,
 				15B554AE171B7B3B0058E159 /* Frameworks */,
@@ -421,11 +428,12 @@
 				15E2B979171BEAEB00526C77 /* ObjectMapper.h */,
 				15E2B97A171BEAEB00526C77 /* ObjectMapper.m */,
 				15E2B994171BED2400526C77 /* OCMapper.h */,
-				F3FEB0861B171934007F44CF /* PropertyProviders.swift */,
+				F3FEB0C11B172452007F44CF /* PropertiesProviders.h */,
+				F3FEB0C21B172452007F44CF /* PropertiesProviders.m */,
 				F3FEB0871B171934007F44CF /* ObjectGenerator.h */,
 				F3FEB0881B171934007F44CF /* ObjectGenerator.m */,
-				F3FEB0851B171933007F44CF /* OCMapper-Bridging-Header.h */,
 				F3FEB08B1B1719B5007F44CF /* ObjectMapper+Private.h */,
+				F3FEB0C81B1726A8007F44CF /* OCMapper-Bridging-Header.h */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -529,6 +537,7 @@
 				15E2B980171BEAEB00526C77 /* Default@2x.png in Resources */,
 				157B316317238C08005AAB02 /* ObjectMappingConfig.xml in Resources */,
 				15371EC01727879700A508F4 /* ObjectMappingConfig.plist in Resources */,
+				F3FEB0C51B17259A007F44CF /* Flight.json in Resources */,
 				1502B3B317CDADE300C095DE /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,13 +578,13 @@
 				15E2B984171BEAEB00526C77 /* Comment.m in Sources */,
 				15E2B985171BEAEB00526C77 /* User.m in Sources */,
 				15E2B989171BEAEB00526C77 /* ObjectMapper.m in Sources */,
-				F3FEB0891B171934007F44CF /* PropertyProviders.swift in Sources */,
 				15E2B98A171BEAEB00526C77 /* ObjectMappingInfo.m in Sources */,
 				157B3076171E3655005AAB02 /* CoreDataManager.m in Sources */,
 				157B307C171E36D4005AAB02 /* CDUser.m in Sources */,
 				157B307F171E3714005AAB02 /* OCMapper.xcdatamodeld in Sources */,
 				157B3087171E457E005AAB02 /* CDAddress.m in Sources */,
 				157B309C171E5D32005AAB02 /* CDPost.m in Sources */,
+				F3FEB0C71B1725A4007F44CF /* Flight.swift in Sources */,
 				157B313E17234A97005AAB02 /* NSDictionary+ObjectMapper.m in Sources */,
 				157B313F17234A97005AAB02 /* NSObject+ObjectMapper.m in Sources */,
 				157B314417234ACB005AAB02 /* ObjectInstanceProvider.m in Sources */,
@@ -587,6 +596,7 @@
 				1502B38B17CD985300C095DE /* AFHTTPRequestOperation.m in Sources */,
 				15EA380518661548005CCEA0 /* CDSpecialUser.m in Sources */,
 				1502B38C17CD985300C095DE /* AFImageRequestOperation.m in Sources */,
+				F3FEB0C31B172452007F44CF /* PropertiesProviders.m in Sources */,
 				F3FEB08A1B171934007F44CF /* ObjectGenerator.m in Sources */,
 				1502B38D17CD985300C095DE /* AFJSONRequestOperation.m in Sources */,
 				15EA38021866102D005CCEA0 /* SpecialUser.m in Sources */,
@@ -699,6 +709,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OCMapper/OCMapper-Prefix.pch";
 				INFOPLIST_FILE = "OCMapper/OCMapper-Info.plist";
@@ -714,6 +725,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OCMapper/OCMapper-Prefix.pch";
 				INFOPLIST_FILE = "OCMapper/OCMapper-Info.plist";

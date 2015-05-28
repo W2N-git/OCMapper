@@ -6,10 +6,8 @@
 //
 //
 
-#ifndef Pods_ObjectMapper_Private_h
-#define Pods_ObjectMapper_Private_h
-#import "ObjectMapper.h"
-@interface ObjectMapper (private)
+#import "OCMapper.h"
+@interface ObjectMapper (private__)
 - (id)processDictionary:(NSDictionary *)source forClass:(Class)class;
 @end
-#endif
+

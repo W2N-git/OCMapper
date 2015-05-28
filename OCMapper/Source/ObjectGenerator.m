@@ -7,7 +7,7 @@
 //
 
 #import "ObjectGenerator.h"
-#import "OCMapper-Swift.h"
+#import "PropertiesProviders.h"
 #import <objc/runtime.h>
 
 @interface ObjectMapper ()

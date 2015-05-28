@@ -27,13 +27,23 @@
 
 #import "AppDelegate.h"
 #import "OCMapperConfig.h"
+#import "OCMapper-Swift.h"
+#import "ObjectGenerator.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{	
-	[OCMapperConfig configure];
-	
+{
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Flight" ofType:@"json"];
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+    
+    Flight *flight = [[ObjectGenerator sharedInstance] objectFromSource:dict toInstanceOfClass:[Flight class]];
+    
+    NSLog(@"%s, LINE:%d, flight: %@", __PRETTY_FUNCTION__, __LINE__, flight);
+
+    
     return YES;
 }
 

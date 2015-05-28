@@ -3,3 +3,4 @@
 //
 
 #import "OCMapper.h"
+#import "PropertiesProviders.h"
